@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js" ng-app="hostManage" lang="">
+    <head>
+   		<title>{{config "sitename"}} | {{title}}</title>
+		<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/Ionicons/css/ionicons.min.css">
+    	<link rel='stylesheet' href='/stylesheets/mainadmin.css' />
+    </head>
+    <body>
+        <script src="/jquery/dist/jquery.min.js"></script>
+        <script src="/angular/angular.min.js"></script>
+        <script src="/javascripts/dirPagination.js"></script>
+        <script src="/metisMenu/dist/metisMenu.min.js"></script>
+        <script src="/highlight/src/highlight.js"></script>
+        <script src="/javascripts/main.js"></script>
+        {{> header }}
+        <div class="container-fluid">
+            <div class="row adminDash">
+                <div class="col-md-2 col-sm-4 sidebar-container" style="height:100%">
+                    {{> sidebar}}
+                </div>
+                <div class="col-md-10 col-sm-8 col-xs-12 adminContent">
+                {{{body}}}
+                </div>
+            </div>
+            <div class="row">
+            {{> dashfoot }}
+            </div>
+        </div>
+  		<script src="/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    </body>
+</html>

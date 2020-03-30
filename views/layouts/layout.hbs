@@ -1,0 +1,21 @@
+<!doctype html>
+<html class="no-js main" ng-app="hostManage" lang="">
+    <head>
+   		<title>{{config "sitename"}} | {{title}}</title>
+		<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/highlight/src/styles/ocean.css">
+    	<link rel='stylesheet' href='/stylesheets/main.css' />
+    </head>
+    <body>
+        <script src="/jquery/dist/jquery.min.js"></script>
+        <script src="/angular/angular.min.js"></script>
+        <script src="/javascripts/dirPagination.js"></script>
+        <script src="/highlight/src/highlight.js"></script>
+        <script src="/javascripts/main.js"></script>
+        {{> header }}
+        <div class="container-fluid">
+        {{{body}}}
+        </div>
+  		<script src="/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    </body>
+</html>
